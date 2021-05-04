@@ -1564,9 +1564,9 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
     padding: 10px 30px;
     /* background-color: #d18901; */
     /*background-image: linear-gradient(89.82deg, #DF4C2F 1.34%, #FF8269 99.84%, rgba(223, 76, 47, 0) 99.85%);*/
-    /* background: -webkit-gradient(linear, left top, right top, from(rgba(0, 106, 234, 1)), to(rgba(100, 43, 162, 1)));
+     background: -webkit-gradient(linear, left top, right top, from(rgba(0, 106, 234, 1)), to(rgba(100, 43, 162, 1)));
     background: linear-gradient(90deg, rgba(0, 106, 234, 1) 0%, rgba(100, 43, 162, 1) 100%);
-    background-color: #493cb5;  */
+    background-color: #493cb5;
     /* background-color: #185bd9; */
     /* background-color: #6f3caa; */
     background-color: #113382; 
@@ -1581,7 +1581,6 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
     font-family: 'Roboto', sans-serif;
     text-transform: capitalize;
     margin: 0 10px 20px 0;
-    /* border: 1px solid transparent; */
 }
 .mobile-bot img {
     width: 100%;

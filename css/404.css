@@ -26,11 +26,11 @@ main {
 	left: 0;
 	background-repeat: no-repeat;
 }
-.container {
-
+.img-fluid {
+	padding-right: 40px; 
 }
-.img-wrapper {
-	text-align: center;
+.img-fluid img {
+	width: 100%;
 }
 .img-wrapper img {
 	margin: 0 auto;

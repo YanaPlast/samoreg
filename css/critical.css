@@ -15,11 +15,17 @@
 .mb-5 {
     margin-bottom: 5px;
 }
-
+.mb-15 {
+    margin-bottom: 15px;
+}
 .mb-30 {
     margin-bottom: 30px;
 }
+/*-- Margin Right --*/
 
+.mr-10 {
+    margin-right: 10px;
+}
 /*-- Padding Top --*/
 
 .pt-25 {
@@ -65,10 +71,7 @@
 .pt-150 {
     padding-top: 150px;
 }
-
 /*-- Padding Bottom --*/
-
-
 .pb-10 {
     padding-bottom: 10px;
 }
