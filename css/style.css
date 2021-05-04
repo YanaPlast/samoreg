@@ -153,13 +153,15 @@ p {
 .butn:hover span {
     -webkit-transition-delay: 0.1s;
     transition-delay: 0.1s;
-    color: #07D1C1;
+    /* color: #07D1C1; */
+    color: #0039a7;
 }
 
 .butn:hover {
     -webkit-transition-delay: 0.1s;
     transition-delay: 0.1s;
-    color: #07D1C1;
+    /* color: #07D1C1; */
+    color: #612da4;
 }
 
 .butn span {
@@ -212,7 +214,9 @@ p {
     left: 0;
     right: 0;
     z-index: 999;
-    background-color: transparent; 
+    /* background-color: transparent;  */
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 106, 234, 1)), to(rgba(100, 43, 162, 1)));
+    background: linear-gradient(90deg, rgba(0, 106, 234, 1) 0%, rgba(100, 43, 162, 1) 100%);
 }
 #header-area .butn-5:hover {
     color: #004ad1;
@@ -388,9 +392,6 @@ p {
 .header-area.header-area-5 .main-menu ul li .sub-menu li:hover a {
     color: #fff;
 }
-
-
-
 /*===========================
     3.banner css 
 ===========================*/
@@ -1458,8 +1459,6 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
 .message {
     display: inline-block;
     position: relative;
-    background-color: rgb(255, 255, 255);
-    /* border: 1px solid #b1223c; */
     border-radius: 18px;
     text-align: left;
     box-shadow:6px 5px 6px 2px rgba(0,0,0,0.12);
@@ -1474,6 +1473,7 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
     width: auto;
     padding: 20px 20px 20px 20px;
     display: inline-block;
+    background-color:#f1f1f1;
 }
 .input-message {
     width: 85%;
@@ -1486,8 +1486,6 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
     width: 60px;
     height: 60px;
     border-radius: 18px;
-    background-color: #86b8ea;
-    /* border: 1px solid #ffffff; */
     background-repeat: no-repeat;
     background-position: center center;
     box-shadow:6px 5px 6px 2px rgba(0,0,0,0.12);
@@ -1499,14 +1497,18 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
     left: -50px;
     background-image: url(../images/chat/owl-icon.png); 
     background-size: 80%;
-    /* background-color: #846ae4; */
-    background-color: #f8eed9;
+    /* background-color: #846ae4;  */
+    /* background-color: #f8eed9; */
+    background-color:#0269e8;
 }
 .client-message:before {
     bottom: -10px;
     right: -50px;
     background-image: url(../images/chat/client-icon.png); 
     background-size: 60%;
+    /* background-color: #86b8ea; */
+    /* background-color: #602ea5; */
+    background-color: #a4bcd4;
 }
 .image-message {
     display: inline-block;
@@ -1564,12 +1566,15 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
     font-family: 'Roboto', sans-serif;
     text-transform: capitalize;
     margin: 0 10px 20px 0;
-
+    border: 1px solid #d18901;
+}
+.mobile-bot img {
+    width: 100%;
 }
 .bot-btn:hover {
-   /* background-image: none;*/
     background-color: #ffffff;
     color: #493cb5;
+    border: 1px solid #493cb5;
 }
 .client-input[type="text"] {
     background-color: transparent;
@@ -1619,8 +1624,9 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
 }
 /* ======================================Custom Style =================================== */
 #chat-screen {
-    background: rgb(212, 134, 10);
-    background: linear-gradient(90deg, rgba(0, 106, 234, 1) 0%, rgba(100, 43, 162, 1) 100%);
+    /* background: rgb(212, 134, 10); */
+    /* background: linear-gradient(90deg, rgba(0, 106, 234, 1) 0%, rgba(100, 43, 162, 1) 100%); */
+    background-color: #ffffff;
     position: relative; 
     min-height: 650px;
 }
@@ -1719,11 +1725,14 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
         right: 10px;
     }
     #header-area-chat ul {
-        padding-top: 35px;
-        align-items: flex-end
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-items: flex-end;
+        height: auto;
     }
     .sticky#header-area-chat ul {
-        padding-top: 18px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     #header-area-chat li:first-child {
         flex: 0 0 60%;
@@ -1752,10 +1761,10 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
         min-height: auto;
     }
     .img-container {
-        top: 650px;
-        margin-right: 20px;
+        top: 620px;
+        margin-right: 10px;
         margin-left: auto;
-        width: 150px;
+        width: 130px;
     }
     .header-logo  {
         display: none;
@@ -1769,6 +1778,9 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
     }
     #header-area-chat .sticky {
         height: 110px;
+    }
+    .bot-btn {
+        margin-bottom: 10px;
     }
 
 }
@@ -1892,6 +1904,14 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
         flex: 0 0 50%;
         text-align: right;
     }
+    #header-area-chat.sticky,
+    #header-area-main.sticky {
+        height: auto;
+        font-size: 14px;
+    }
+    .header-area-5 nav ul li:last-child a {
+        font-size: 14px;
+    }
     .main-menu ul li {
         margin: 0;
     }
@@ -1915,12 +1935,12 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
     }
 }
 @media (max-width: 431px)  {
-    #header-area-chat.sticky  {
+    /* #header-area-chat.sticky  {
        height: 105px;
-    } 
-    #header-area-main.sticky {
+    }  */
+    /* #header-area-main.sticky {
         height: 110px;
-    }
+    } */
 }
 @media (max-width: 420px) {
     .client-input[type="text"] {
@@ -1938,16 +1958,26 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
     #page-menu li:first-child {
         flex: 0 0 100%;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .sticky#header-area-chat li:first-child {
+        display: none;
     }
     #page-menu li:nth-child(2) {
         flex: 0 0 100%;
         text-align: center;
     }
     #chat-screen {
-        padding-top: 180px;
+        padding-top: 160px;
     }
     #header-area-chat.sticky, #header-area-main.sticky   {
-        height: 160px;
+        height: auto;
+    }
+    .header-area-5 nav ul li:last-child a {
+        border: 1px solid #fff;
+        padding: 4px 15px;
+        border-radius: 30px;
+        font-size: 14px;
     }
 }
