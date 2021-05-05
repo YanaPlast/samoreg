@@ -1983,7 +1983,6 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
     }
     .client-input[type="text"] {
         width: 78%;
-        padding-right: 10px; 
     }
     .client-submit[type="submit"] {
         right: 10px;
@@ -2031,4 +2030,28 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
         flex-basis: 100% !important;
         max-width: 100%;
     }
+    .client-input[type="text"]::-webkit-input-placeholder {
+        font-size: 13px;
+    }
+
+    .client-input[type="text"]::-moz-placeholder {
+        font-size: 13px;
+    }
+
+    /* Firefox 19+ */
+    .client-input[type="text"]:-moz-placeholder {
+        font-size: 13px;
+    }
+
+    /* Firefox 18- */
+    .client-input[type="text"]:-ms-input-placeholder {
+        font-size: 13px;
+    }
+    /* .client-input[type="text"]::-webkit-input-placeholder,
+    .client-input[type="text"]:-ms-input-placeholder,
+    .client-input[type="text"]::placeholder {
+        font-size: 12px;
+        color: red;
+    } */
+
 }
