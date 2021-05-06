@@ -62,11 +62,11 @@
         padding: 20px 10px 0;
     }
 
-    .banner-content h2 {
+    .banner-content h1 {
         font-size: 38px;
     }
 
-    .banner-content.banner-content-5 h2 {
+    .banner-content.banner-content-5 h1 {
         line-height: 50px;
     }
 
@@ -229,7 +229,7 @@
         height: 700px;
     }
 
-    .banner-content.banner-content-2 h2 {
+    .banner-content.banner-content-2 h1 {
         font-size: 46px;
     }
 
@@ -520,11 +520,11 @@
         padding-top: 43%;
     }
 
-    .banner-content h2 {
+    .banner-content h1 {
         font-size: 46px;
     }
 
-    .banner-content.banner-content-2 h2 {
+    .banner-content.banner-content-2 h1 {
         font-size: 34px;
     }
 
@@ -534,14 +534,6 @@
 
     .banner-content.banner-content-2 img {
         display: none;
-    }
-
-    .banner-content.banner-content-8 h2 {
-        padding-right: 0;
-    }
-
-    .banner-content.banner-content-8 {
-        padding-top: 30%;
     }
 
     .about-play .play-overlay i {
@@ -845,7 +837,7 @@
         height: 750px;
     }
 
-    .banner-content h2 {
+    .banner-content h1 {
         font-size: 26px;
         line-height: 38px;
     }
@@ -860,7 +852,7 @@
         display: block;
     }
 
-    .banner-content h2 {
+    .banner-content h1 {
         font-size: 28px;
     }
 
@@ -883,7 +875,7 @@
         padding-top: 60%;
     }
 
-    .banner-content.banner-content-5 h2 {
+    .banner-content.banner-content-5 h1 {
         line-height: 42px;
     }
 
@@ -891,32 +883,7 @@
         padding-right: 0;
     }
 
-    .banner-content.banner-content-7 form {
-        position: relative;
-        width: 275px;
-    }
-
-    .banner-content.banner-content-7 form input {
-        width: 290px;
-    }
-
-    .banner-content.banner-content-7 form button {
-        right: -16px;
-    }
-
-    .banner-content.banner-content-8 h2 {
-        padding-right: 0;
-    }
-
-    .banner-content.banner-content-8 {
-        padding-top: 52%;
-    }
-
-
-
-
-
-    #sub-item {
+     #sub-item {
         padding-top: 0;
     }
 
@@ -1404,7 +1371,7 @@
 		padding-right: 0;
 	}	
 
-.banner-content.banner-content-4 h2 {
+.banner-content.banner-content-4 h1 {
 	padding-right: 0;
 }
 .banner-content.banner-content-4 p {

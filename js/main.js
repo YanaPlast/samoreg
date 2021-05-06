@@ -90,8 +90,6 @@ $(function () {
         }, 1500);
     });
 
-
-
     //====== filter & masonry isotope
 /*     var grid = $('.grid').isotope({
         itemSelector: '.grid-item',
