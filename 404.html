@@ -1,35 +1,22 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru-RU">
 
 <head>
 
-    <!--====== Required meta tags ======-->
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="x-rim-auto-match" content="none">
 
-    <!--====== Title ======-->
-    <title>opo | Home 2</title>
-
-    <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/png">
-
-    <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <!--====== Fontawesome css ======-->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-
-    <!--====== Default css ======-->
-    <link rel="stylesheet" href="css/critical.css">
-
-    <!--====== Style css ======-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/404.css">
-
-
-
+<title>Запрашиваемая страница не найдена!</title>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/png">
+ 
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/critical.css">
+<link rel="stylesheet" href="css/style.css"> 
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/404.css">
 
 </head>
 
@@ -37,13 +24,19 @@
     <main>
         <div class="wrapper">
             <div class="container">
-                <div class="row align-items-end justify-content-center">
-                    <div class="col-lg-4 col-md-4">
+                <div class="row align-items-top justify-content-center">
+                    <div class="col-lg-4 col-md-5">
                         <div class="img-fluid">
-                            <img src="images/chat/404.png" alt="">
+                            <picture>
+                                <source class="lazy" data-src="images/chat/404.webp" type="image/webp" media="(min-width: 768px)">
+                                <source class="lazy" data-src="images/chat/404.png" type="image/png" media="(min-width: 768px)">
+                                <source class="lazy" data-src="images/chat/404-mobile.png" type="image/png" media="(max-width: 767.98px)">
+                                <source class="lazy" data-src="images/chat/404-mobile.webp" type="image/webp" media="(max-width: 767.98px)">
+                                <img class="lazy" data-src="images/chat/404.png" alt="Страница не найдена"/>
+                            </picture>
                         </div>
                     </div>
-                    <div class="col-md-8 text-left">
+                    <div class="col-lg-8 col-md-7 text-left">
                         <div class="warning-title mb-30">Страница не найдена</div>
                         <div class="warning-subtitle mb-15">Ошибка могла произойти по нескольким причинам:</div>
                         <ul class="warning-list">
@@ -56,26 +49,16 @@
 
                     </div>
                 </div>
+
             </div>
         </div>
     </main>
 
-        <!--====== jquery js ======-->
+
         <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-        <!-- <script src="js/vendor/jquery-1.12.4.min.js"></script> -->
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <!-- <script src="js/dnSlide.js"></script> -->
-        <!-- <script src="js/expandJS.js"></script> -->
-        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC3Ip9iVC0nIxC6V14CKLQ1HZNF_65qEQ "></script> -->
-        <!-- <script src="js/jquery.counterup.min.js"></script> -->
-        <!-- <script src="js/isotope.pkgd.min.js"></script> -->
-        <!-- <script src="js/jquery.nice-number.min.js"></script> -->
-        <!-- <script src="js/jquery.meanmenu.min.js"></script> -->
-        <!-- <script src="js/waypoint.js"></script> -->
-        <script src="js/slick.min.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/lazyload.min.js"></script>
 
     </body>
 

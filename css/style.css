@@ -1,6 +1,5 @@
-/* <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,500i,600,700" rel="stylesheet"> */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-/* font-family: 'Roboto', sans-serif; */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -98,10 +97,7 @@ p {
 .nowrap{
     white-space: nowrap;
 }
-
-
 /*button css*/
-
 .butn {
     padding: 0px 30px;
     background-color: transparent;
@@ -153,14 +149,12 @@ p {
 .butn:hover span {
     -webkit-transition-delay: 0.1s;
     transition-delay: 0.1s;
-    /* color: #07D1C1; */
     color: #0039a7;
 }
 
 .butn:hover {
     -webkit-transition-delay: 0.1s;
     transition-delay: 0.1s;
-    /* color: #07D1C1; */
     color: #612da4;
 }
 
@@ -178,8 +172,6 @@ p {
     opacity: 1;
 }
 
-/* section title css */
-
 .section-title h3 {
     font-size: 35px;
     font-weight: 700;
@@ -189,21 +181,6 @@ p {
 .section-title p {
     padding: 0 255px;
     padding-top: 10px;
-}
-/*preloader css*/
-.preloader{
-  position: relative;
-}
-
-.drawing{
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    display: block;
-    left: 0;
-    top: 0;
-    background-color: #3a3a3a;
-    z-index: 999999999;
 }
 /*===========================
     2.navigation css 
@@ -357,22 +334,6 @@ p {
     color: #fff;
 
 }
-
-/*====== home page 2 ======*/
-.header-area.header-area-2 .main-menu ul li .sub-menu li:hover {
-    background: #700ae1;
-}
-
-.header-area.header-area-2 .main-menu ul li .sub-menu li a {
-    color: #700ae1;
-    border-bottom: 1px solid rgba(103, 25, 228, 0.7);
-}
-
-.header-area.header-area-2 .main-menu ul li .sub-menu li:hover a {
-    color: #fff;
-}
-
-
 /*====== home page 5 ======*/
 
 .header-area-5 nav ul li:last-child a {
@@ -393,10 +354,6 @@ p {
 .header-area.header-area-5 .main-menu ul li .sub-menu li:hover a {
     color: #fff;
 }
-/*===========================
-    3.banner css 
-===========================*/
-
 #banner {
     height: 800px;
     position: relative;
@@ -973,25 +930,6 @@ p {
     background: -webkit-gradient(linear, left top, right top, from(rgba(148, 69, 255,.9)), to(rgba(240, 69, 255, .9))) !important;
     background: linear-gradient(90deg, rgba(148, 69, 255,.9) 0%, rgba(240, 69, 255, .9) 100%) !important;
 }
-/*===========================
-    8.Screenshots css 
-===========================*/
-
-/*====== home page 5 ======*/
-.mobile-slide .slick-center .mobile-thumb img {
-    opacity: 1;
-}
-
-.mobile-slide .mobile-thumb img {
-    opacity: 0.1;
-    width: 100%;
-}
-
-
-/*===========================
-    9.pricing css 
-===========================*/
-
 
 /*===========================
     10.testomonial css 
@@ -1038,7 +976,6 @@ p {
     padding-bottom: 10px;
 }
 
-
 .test-part p {
     color: #fff;
 }
@@ -1063,17 +1000,7 @@ p {
     bottom: -85px;
     display: inline-block;
 }
-/*#testomonial .slick-track {
-    display: flex;  
-    align-items: stretch;
-}
-#testomonial .slick-slide, #testomonial .slick-cloned, #testomonial .slick-current, #testomonial .slick-active {
-    flex: 0 0 10%;
-}
-#testomonial .slick-initialized .slick-slide, #testomonial .slick-slide {
-    height: 100%;
-}
-*/
+
 .testomonial-slide .slick-dots li {
     display: inline-block;
 }
@@ -1100,8 +1027,6 @@ p {
     background: -webkit-gradient(linear, left top, right top, from(rgba(119, 1, 219, 1)), to(rgba(25, 153, 242, 1))) !important;
     background: linear-gradient(90deg, rgba(119, 1, 219, 1) 0%, rgba(25, 153, 242, 1) 100%) !important;
 }
-
-
 
 #faq .card {
     border: 0;
@@ -1355,35 +1280,6 @@ p {
     color: #fff;
 }
 
-.footer-bg .footer-item form input[type="checkbox"] {
-    display: none;
-
-}
-.footer-bg .footer-item form input[type="checkbox"] + .label-text::before {
-    content: '\2714';
-    border: 2px solid #fff;
-    border-radius: 2px;
-    padding-left: 1px;
-    padding-right: 1px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    color: transparent;
-    margin-right: 10px;
-    font-size: 12px;
-}
-
-.footer-bg .footer-item form input[type="checkbox"]:checked + .label-text::before {
-    background: #fff;
-    content: '\2714';
-    color: #333;
-    font-family: fontawesome;
-    padding: 3px 4px;
-}
-.footer-bg .footer-item form label span a {
-    color: #fff;
-    text-decoration: underline;
-}
-
 
 /*back to top*/
 .back-to-top {
@@ -1488,22 +1384,17 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
     content: '';
     display: block;
     position: absolute;
+    bottom: -10px;
     width: 60px;
     height: 60px;
     border-radius: 18px;
     background-repeat: no-repeat;
     background-position: center center;
-
-
 }
 .bot-message:before {
-    bottom: -10px;
     left: -50px;
     background-image: url(../images/chat/owl-icon.png); 
     background-size: 80%;
-    /* background-color: #846ae4;  */
-    /* background-color: #f8eed9; */
-    /* background-color:#0269e8; */
     background-color:#f1f1f1;
     -webkit-box-shadow: 0px 0px 9px 2px rgba(126, 126, 126, 0.48);
     -moz-box-shadow: 0px 0px 9px 2px rgba(126, 126, 126, 0.48);
@@ -1511,12 +1402,9 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
     
 }
 .client-message:before {
-    bottom: -10px;
     right: -50px;
     background-image: url(../images/chat/client-icon.png); 
     background-size: 60%;
-    /* background-color: #86b8ea; */
-    /* background-color: #602ea5; */
     background-color: #a4bcd4;
     box-shadow:6px 5px 6px 2px rgba(0,0,0,0.12);
     -webkit-box-shadow:6px 5px 6px 2px rgba(0,0,0,0.12);
@@ -1565,13 +1453,8 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
 }
 .bot-btn {
     padding: 10px 30px;
-    /* background-color: #d18901; */
-    /*background-image: linear-gradient(89.82deg, #DF4C2F 1.34%, #FF8269 99.84%, rgba(223, 76, 47, 0) 99.85%);*/
-     background: -webkit-gradient(linear, left top, right top, from(rgba(0, 106, 234, 1)), to(rgba(100, 43, 162, 1)));
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 106, 234, 1)), to(rgba(100, 43, 162, 1)));
     background: linear-gradient(90deg, rgba(0, 106, 234, 1) 0%, rgba(100, 43, 162, 1) 100%);
-    background-color: #493cb5;
-    /* background-color: #185bd9; */
-    /* background-color: #6f3caa; */
     background-color: #113382; 
     -webkit-transition: all .3s;
     transition: all .3s linear;
@@ -1592,7 +1475,6 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
     background-image: none;
     background-color: #ffffff;
     color: #493cb5;
-    /* border: 1px solid #493cb5; */
     -webkit-box-shadow: 0px 0px 0px 1px rgba(73, 60, 181, 1) inset;
     -moz-box-shadow: 0px 0px 0px 1px rgba(73, 60, 181, 1) inset;
     box-shadow: 0px 0px 0px 1px rgba(73, 60, 181, 1) inset;
@@ -1645,17 +1527,15 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
 .outline-bright {
     box-shadow: 0 0 3px 2px rgb(73, 60, 181);
 }
-/* ======================================Custom Style =================================== */
+
 #chat-screen {
-    /* background: rgb(212, 134, 10); */
-    /* background: linear-gradient(90deg, rgba(0, 106, 234, 1) 0%, rgba(100, 43, 162, 1) 100%); */
     background-color: #ffffff;
     position: relative; 
     min-height: 650px;
 }
+ /*======= Липкая Сова ==========*/
 .chat-column {
     height: auto;
-/*    z-index: 10;*/
 }
 .img-container {
     position: sticky;
@@ -1672,6 +1552,8 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
 .parent {
     min-height: 850px;
 } 
+ /*======= Липкая Сова Конец ==========*/
+  /*======= Модальное окно ==========*/
 .modal-backdrop {
     z-index: 9 !important;
 }
@@ -1779,9 +1661,6 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
 
 }
 @media (max-width: 991.98px) {
-    /* .header-logo img {
-        padding: 20px 0;
-    } */
     .about-play {
         margin-bottom: 20px;
     }
@@ -2047,11 +1926,4 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
     .client-input[type="text"]:-ms-input-placeholder {
         font-size: 13px;
     }
-    /* .client-input[type="text"]::-webkit-input-placeholder,
-    .client-input[type="text"]:-ms-input-placeholder,
-    .client-input[type="text"]::placeholder {
-        font-size: 12px;
-        color: red;
-    } */
-
 }
