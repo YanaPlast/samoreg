@@ -44,11 +44,11 @@ h6 {
     margin: 0px;
 }
 
-h1 {
+h2 {
     font-weight: 500;
 }
 
-h2 {
+h1 {
     font-size: 36px;
 }
 
@@ -447,14 +447,14 @@ p {
     padding-top: 50%;
 }
 
-.banner-content h2 {
+.banner-content h1 {
     color: #fff;
     font-size: 50px;
     line-height: 66px;
     font-weight: 600;
 }
 
-.banner-content h2 span{
+.banner-content h1 span{
     display: block;
 }
 
@@ -509,7 +509,7 @@ p {
     background-repeat: no-repeat;
 }
 
-.banner-content.banner-content-5 h2 {
+.banner-content.banner-content-5 h1 {
     line-height: 62px;
 }
 
@@ -1643,7 +1643,7 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
     cursor: pointer;
 }
 .outline-bright {
-    box-shadow: 0 0 3px 2px #e04e31;
+    box-shadow: 0 0 3px 2px rgb(73, 60, 181);
 }
 /* ======================================Custom Style =================================== */
 #chat-screen {
