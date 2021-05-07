@@ -1,5 +1,43 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v27-latin_cyrillic-regular.eot');
+    src: local(''),
+        url('../fonts/roboto-v27-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/roboto-v27-latin_cyrillic-regular.woff2') format('woff2'),
+        url('../fonts/roboto-v27-latin_cyrillic-regular.woff') format('woff'),
+        url('../fonts/roboto-v27-latin_cyrillic-regular.ttf') format('truetype'),
+        url('../fonts/roboto-v27-latin_cyrillic-regular.svg#Roboto') format('svg');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v27-latin_cyrillic-500.eot');
+    src: local(''),
+        url('../fonts/roboto-v27-latin_cyrillic-500.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/roboto-v27-latin_cyrillic-500.woff2') format('woff2'),
+        url('../fonts/roboto-v27-latin_cyrillic-500.woff') format('woff'),
+        url('../fonts/roboto-v27-latin_cyrillic-500.ttf') format('truetype'),
+        url('../fonts/roboto-v27-latin_cyrillic-500.svg#Roboto') format('svg');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v27-latin_cyrillic-700.eot');
+    src: local(''),
+        url('../fonts/roboto-v27-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/roboto-v27-latin_cyrillic-700.woff2') format('woff2'),
+        url('../fonts/roboto-v27-latin_cyrillic-700.woff') format('woff'),
+        url('../fonts/roboto-v27-latin_cyrillic-700.ttf') format('truetype'),
+        url('../fonts/roboto-v27-latin_cyrillic-700.svg#Roboto') format('svg');
+}
+
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -408,7 +446,7 @@ p {
     color: #fff;
     font-size: 50px;
     line-height: 66px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .banner-content h1 span{
@@ -426,7 +464,7 @@ p {
 }
 
 .banner-content a.butn-2 {
-    font-weight: 600;
+    font-weight: 700;
     color: #fff;
     margin-top: -40px;
 }
@@ -529,7 +567,7 @@ p {
     font-size: 20px;
     padding-top: 26px;
     padding-bottom: 14px;
-    font-weight: 600;
+    font-weight: 700;
     color: #333;
 }
 
@@ -718,7 +756,7 @@ p {
 
 .about-content h3 {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 700;
     padding-bottom: 31px;
 }
 
@@ -768,7 +806,7 @@ p {
 }
 
 .page-title h3 {
-    font-weight: 600;
+    font-weight: 700;
     color: #fff;
     font-size: 35px;
     line-height: 50px;
@@ -855,7 +893,7 @@ p {
 
 .team-content h5 {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     padding-top: 25px;
 }
 
@@ -908,7 +946,7 @@ p {
 }
 .team-part .team-sec .team-overlay-5 h5 {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 28px;
     color: #fff;
 }
@@ -1155,7 +1193,7 @@ p {
 
 .footer-item h4 {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     padding-bottom: 15px;
 
 }
@@ -1212,7 +1250,7 @@ p {
 #footer-5 .sub-footer .sub-footer-item h2 {
     font-size: 35px;
     color: #fff;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 #footer-5 .sub-footer .sub-footer-item form input {
@@ -1253,7 +1291,7 @@ p {
     bottom: 0;
     color: #fff;
     font-size: 18px;
-    font-weight: 600;
+    font-weight:700;
     height: 50px;
     border: 0;
     padding: 0 40px;
@@ -1419,7 +1457,7 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
     max-width: 95%;
 }
 .message-title {
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1;
     margin-bottom: 10px;
 }
