@@ -23,6 +23,9 @@
 }
 /*-- Margin Right --*/
 
+.mr-05 {
+    margin-right: 5px ;
+}
 .mr-10 {
     margin-right: 10px;
 }

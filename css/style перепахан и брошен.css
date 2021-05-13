@@ -1484,6 +1484,9 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
     transition: all .3s linear;
     color: #b8b8b8;
     transition: all linear;
+    -webkit-box-shadow: 0px 0px 0px 1px #e2e2e2 inset;
+    -moz-box-shadow: 0px 0px 0px 1px #e2e2e2 inset;
+    box-shadow: 0px 0px 0px 1px #e2e2e2 inset;
 }
 .used:hover {
     background: none;
@@ -1563,28 +1566,13 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
     height: auto;
 }
 .img-container {
-    position: sticky;
-    /* top: 950px;  */
-    top: 100vh;
-    z-index: 0;
-    /* max-width: 300px; */
-    height: 10px;
-    background-color: yellow;
-}
-.img-wrapper {
     position: absolute;
-    bottom: 20px; 
-    height: calc(100vh - 200px);
-    width: auto;
+    bottom: 0; 
+    z-index: 101;
+    background-color: yellow; 
+    height: calc (100vh-200px);
 }
-.img-wrapper img {
-    height: 100%;
-    width: auto;
-}
-.parent {
-    min-height: 850px;
-} 
- /*======= Липкая Сова Конец ==========*/
+
   /*======= Модальное окно ==========*/
 .modal-backdrop {
     z-index: 9 !important;
