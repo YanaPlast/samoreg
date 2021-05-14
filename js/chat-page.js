@@ -1,5 +1,5 @@
-$(function () {
-
+$(function () {    
+    
     "use strict";
 
     //===== Sticky
@@ -11,64 +11,6 @@ $(function () {
             $("#header-area-main, #header-area-chat").addClass("sticky");
         }
     });
-
-    //====== Magnific Popup
-    $('.image-popup-vertical-fit').magnificPopup({
-            type: 'image',
-            closeOnContentClick: true,
-            mainClass: 'mfp-img-mobile',
-            image: {
-                verticalFit: true
-            }          
-        });
-
-
-    //====== testomonial Slide Slick
-
-    $('.testomonial-slide').slick({
-        infinite: true,
-        autoplay: false,
-        autoplaySpeed: 4000,
-        speed: 700,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        arrows: false,
-        dots: true,
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                }
-        },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                }
-        },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-        },
-            {
-                breakpoint: 576,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-        ]
-    });
-
 
     //===== Back to top
 
@@ -89,23 +31,6 @@ $(function () {
             scrollTop: 0,
         }, 1500);
     });
-
-    //====== filter & masonry isotope
-/*     var grid = $('.grid').isotope({
-        itemSelector: '.grid-item',
-        percentPosition: true,
-        masonry: {
-            // use outer width of grid-sizer for columnWidth
-            columnWidth: '.grid-item'
-        }
-    })
-    $('.portfolio-menu').on('click', 'button', function () {
-        var filterValue = $(this).attr('data-filter');
-        grid.isotope({
-            filter: filterValue
-        });
-    }); */
-
 
   //====== Outline on focus for input  ===============
 
@@ -202,31 +127,9 @@ $(function () {
 
 $('.single-use').on('click', function(){
     $(this).addClass('used');
-})
+});
 
-// Cкролл до футера
-
-/* ========Работает но не учитывает ресайз
-var target = $('.chatPage-footer');
-var targetPos = target.offset().top + target.offset().top*0.03;
-var winHeight = $(window).height();
-var scrollToElem = targetPos - winHeight;
-
-
-$(window).scroll(function(){
-  var winScrollTop = $(this).scrollTop();
-  if(winScrollTop > scrollToElem){
-      var stopHeight = target.outerHeight();
-      console.log(stopHeight);
-    //сработает когда пользователь доскроллит до футера на странице с чатом
-    // $('#owl-container').css('bottom', stopHeight);
-    $('#owl-container').css({'position':'absolute', 'bottom':'0'});
-  } else {
-      $('#owl-container').css('position', 'fixed');
-  }
-});  */
-
-
+// Скролл до футера
 var target = $('.chatPage-footer');
 
 
@@ -238,7 +141,7 @@ var scrollToElem = targetPos - winHeight;
   var winScrollTop = $(this).scrollTop();
   if(winScrollTop > scrollToElem){
       var stopHeight = target.outerHeight();
-      console.log(stopHeight);
+    //   console.log(stopHeight);
     //сработает когда пользователь доскроллит до футера на странице с чатом
     $('#owl-container').css({'position':'absolute', 'bottom':'0'});
   } else {
@@ -261,19 +164,6 @@ $(window).resize(function(){
         }
 });
 
-/* var target = $('.chatPage-footer');
-var targetPos = target.offset().top;
-var winHeight = $(window).height();
-var scrollToElem = targetPos - winHeight;
-$(window).bind('scroll', function(){
-  var winScrollTop = $(this).scrollTop();
-  if(winScrollTop > scrollToElem){
-      var stopHeight = target.outerHeight();
-      console.log(stopHeight);
-      $(window).unbind('scroll');
-    //сработает когда пользователь доскроллит до футера на странице с чатом
-  }
-  
-}); */
 
 });
+    

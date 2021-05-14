@@ -38,12 +38,14 @@
         url('../fonts/roboto-v27-latin_cyrillic-700.svg#Roboto') format('svg');
 }
 
-html,
-body {
+html {
     height: 100%;
-}
+} 
 body {
     font-family: 'Roboto', sans-serif;
+}
+#chatPage-body {
+    height: 100%;
 }
 .chatPage-wrapper {
     display: flex;
@@ -946,7 +948,11 @@ p {
     left: 50%;
     top: 50%;
 }
-
+.image-popup-vertical-fit {
+    width: 100%;
+    height: 100%;
+    pointer-events: all;
+}
 .team-content h5 {
     font-size: 18px;
     font-weight: 700;
@@ -1282,6 +1288,8 @@ p {
 }
 #footer-5 .footer-item span {
     color: #fff;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 #footer-5 .footer-item-5 span a {
