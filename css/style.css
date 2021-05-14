@@ -1559,6 +1559,7 @@ p {
     /* height: calc(100vh - 300px); */
     height: 70vh;
     /* background-color: yellow; */
+    max-height: 750px;
 }
  .img-wrapper {
     /* position: absolute;  */
@@ -1607,12 +1608,13 @@ p {
 @media (min-width: 1600px) {
     .img-container {
         margin-left: 250px;
-        max-width: 290px;
+        /* max-width: 290px; */
     }
 }
 @media (max-width: 1599px) and (min-width: 1200px) {
     .img-container {
         margin-left: 80px;
+
     }
 }
 @media (max-width: 1199.98px){
