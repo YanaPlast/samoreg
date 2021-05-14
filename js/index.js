@@ -94,6 +94,12 @@ $(function () {
 	$('.btn-prev').click(prevTab);
 
     	function nextTab() {
+            var scrollTop = $('#pills-tab').offset().top-80;
+            console.log(scrollTop);
+            // скроллим страницу на значение равное позиции элемента
+            $(document).scrollTop(scrollTop);
+
+            $('#pills-tab').offset().top;
             var currentTabId = $('.tab-pane.show').attr('id');
             var currentStep = $('nav-link.active').attr('id');
             // console.log(currentTabId);
@@ -126,6 +132,10 @@ $(function () {
     	}
 
         function prevTab() {
+            var scrollTop = $('#pills-tab').offset().top-80;
+            console.log(scrollTop);
+            // скроллим страницу на значение равное позиции элемента
+            $(document).scrollTop(scrollTop);
             var currentTabId = $('.tab-pane.show').attr('id');
             var currentStep = $('nav-link.active').attr('id');
              if (currentTabId == 'step-1') {
