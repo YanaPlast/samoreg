@@ -48,7 +48,7 @@ body {
 .chatPage-wrapper {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 100%;
 }
 .chatPage-header {
     flex: 0 0 auto;
@@ -57,7 +57,7 @@ body {
     flex: 1 0 auto;
     background-color: #ffffff;
     position: relative;
-    /* min-height: 650px; */
+    min-height: 100vh;
 }
 
 .chatPage-footer {
@@ -1555,15 +1555,11 @@ p {
     position: fixed;
     z-index: 0;
     bottom: 0;
-    /* height: 10px; */
-    /* height: calc(100vh - 300px); */
-    height: 50vh;
+    height: 60vh;
     /* background-color: yellow; */
     
 }
  .img-wrapper {
-    /* position: absolute;  */
-    /* bottom: 30px;   */
     height: 100%;
     /* background-color: blue; */
     padding-bottom: 20px;
@@ -1572,7 +1568,6 @@ p {
 .img-wrapper img {
     height: 100%;
     width: auto;
-    /* max-height: 750px; */
 }
 
  /*======= Липкая Сова Конец ==========*/
@@ -1606,16 +1601,19 @@ p {
 }
 
 /* ====================== media =============================*/
+@media (min-width: 2000px) {
+    .img-container {
+        margin-left: 15%;
+    }
+}
 @media (min-width: 1600px) {
     .img-container {
         margin-left: 250px;
-        /* max-width: 290px; */
     }
 }
 @media (max-width: 1599px) and (min-width: 1200px) {
     .img-container {
         margin-left: 80px;
-
     }
 }
 @media (max-width: 1199.98px){
