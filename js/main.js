@@ -204,9 +204,75 @@ $('.single-use').on('click', function(){
     $(this).addClass('used');
 })
 
-// Уже нажатые остальные кнопки 
-/* $('.bot-btn').on('click', function(){
-    $(this).addClass('pushed');
-}) */
+// Cкролл до футера
+
+/* ========Работает но не учитывает ресайз
+var target = $('.chatPage-footer');
+var targetPos = target.offset().top + target.offset().top*0.03;
+var winHeight = $(window).height();
+var scrollToElem = targetPos - winHeight;
+
+
+$(window).scroll(function(){
+  var winScrollTop = $(this).scrollTop();
+  if(winScrollTop > scrollToElem){
+      var stopHeight = target.outerHeight();
+      console.log(stopHeight);
+    //сработает когда пользователь доскроллит до футера на странице с чатом
+    // $('#owl-container').css('bottom', stopHeight);
+    $('#owl-container').css({'position':'absolute', 'bottom':'0'});
+  } else {
+      $('#owl-container').css('position', 'fixed');
+  }
+});  */
+
+
+var target = $('.chatPage-footer');
+
+
+$(window).scroll(function(){
+var targetPos = target.offset().top + target.offset().top*0.02;
+var winHeight = $(window).height();
+var scrollToElem = targetPos - winHeight;
+  var winScrollTop = $(this).scrollTop();
+  if(winScrollTop > scrollToElem){
+      var stopHeight = target.outerHeight();
+      console.log(stopHeight);
+    //сработает когда пользователь доскроллит до футера на странице с чатом
+    $('#owl-container').css({'position':'absolute', 'bottom':'0'});
+  } else {
+      $('#owl-container').css('position', 'fixed');
+  }
+}); 
+
+$(window).resize(function(){
+    var targetPos = target.offset().top + target.offset().top*0.03;
+    var winHeight = $(window).height();
+    var scrollToElem = targetPos - winHeight;
+    var winScrollTop = $(this).scrollTop();
+        if(winScrollTop > scrollToElem){
+            var stopHeight = target.outerHeight();
+            console.log(stopHeight);
+            //сработает когда пользователь доскроллит до футера на странице с чатом
+            $('#owl-container').css({'position':'absolute', 'bottom':'0'});
+        } else {
+            $('#owl-container').css('position', 'fixed');
+        }
+});
+
+/* var target = $('.chatPage-footer');
+var targetPos = target.offset().top;
+var winHeight = $(window).height();
+var scrollToElem = targetPos - winHeight;
+$(window).bind('scroll', function(){
+  var winScrollTop = $(this).scrollTop();
+  if(winScrollTop > scrollToElem){
+      var stopHeight = target.outerHeight();
+      console.log(stopHeight);
+      $(window).unbind('scroll');
+    //сработает когда пользователь доскроллит до футера на странице с чатом
+  }
+  
+}); */
 
 });

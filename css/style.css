@@ -55,7 +55,11 @@ body {
 }
 #chat-screen {
     flex: 1 0 auto;
+    background-color: #ffffff;
+    position: relative;
+    /* min-height: 650px; */
 }
+
 .chatPage-footer {
     flex: 0 0 auto;
 }
@@ -1540,41 +1544,38 @@ p {
     box-shadow: 0 0 3px 2px rgb(73, 60, 181);
 }
 
-#chat-screen {
-    background-color: #ffffff;
-    position: relative; 
-    min-height: 650px;
-}
  /*======= Липкая Сова ==========*/
 .chat-column {
     height: auto;
 }
-.img-container {
-    position: sticky;
-    /* top: 950px;  */
-    top: 100vh;
+#owl-container {
+    position: fixed;
     z-index: 0;
-    /* max-width: 300px; */
-    height: 10px;
+    bottom: 0;
+    /* height: 10px; */
+    /* height: calc(100vh - 300px); */
+    height: 70vh;
     background-color: yellow;
 }
-.img-wrapper {
-    position: absolute;
-    bottom: 30px; 
-    height: calc(100vh - 200px);
-    width: auto;
-    padding-top: 100px;
-}
+ .img-wrapper {
+    /* position: absolute;  */
+    /* bottom: 30px;   */
+    height: 100%;
+    background-color: blue;
+    padding-bottom: 20px;
+    padding-top: 60px;
+} 
 .img-wrapper img {
     height: 100%;
     width: auto;
-    max-height: 550px;
+    /* max-height: 550px; */
 }
-.parent {
+/* .parent {
     min-height: 450px;
-} 
+}  */
  /*======= Липкая Сова Конец ==========*/
-  /*======= Модальное окно ==========*/
+
+/*======= Модальное окно ==========*/
 .modal-backdrop {
     z-index: 9 !important;
 }
@@ -1628,21 +1629,11 @@ p {
     }
 }
 @media (max-width: 991.98px) and (min-width: 768px)  {
-    .img-container {
-        max-width: 180px;
-        margin-left: 30px;
-    }  
     #chat-screen {
         padding-top: 120px;
     }
 }
 @media  (max-width: 991.98px) {
-    .img-container {
-        top: 800px;
-    }
-    /* .client-input[type="text"] {
-        width: 85%;
-    } */
     .modal-dialog {
         max-width: 90%;
     }
@@ -1717,14 +1708,13 @@ p {
         padding-top: 20px;
     }
     #chat-screen {
-        padding-top: 125px;
+        padding-top: 100px;
         min-height: none;
     }
     .parent {
         min-height: auto;
     }
     .img-container {
-        top: 620px;
         margin-right: 10px;
         margin-left: auto;
         width: 130px;
@@ -1931,7 +1921,7 @@ p {
         padding: 10px 0;
     }
     #chat-screen {
-        padding-top: 160px;
+        padding-top: 110px;
     }
     #header-area-chat.sticky, #header-area-main.sticky   {
         height: auto;
