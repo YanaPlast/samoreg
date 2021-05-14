@@ -72,15 +72,22 @@
                     <picture>
                         <source class="lazy" data-src="images/chat/bot-owl-donor-h750.webp" type="image/webp" media="(min-width: 768px)">
                         <source class="lazy" data-src="images/chat/bot-owl-donor-h750.png" type="image/png" media="(min-width: 768px)">
-                        <source class="lazy" data-src="images/chat/bot-owl-mini.webp" type="image/webp" media="(max-width: 767.98px)">
-                        <source class="lazy" data-src="images/chat/bot-owl-mini.png" type="image/png" media="(max-width: 767.98px)">
+                        <source class="lazy" data-src="images/chat/bot-owl-mini.webp" type="image/webp" media="(max-width: 767.98px) and (min-width: 670px)">
+                        <source class="lazy" data-src="images/chat/bot-owl-mini.png" type="image/png" media="(max-width: 767.98px) and (min-width: 670px)">
+                        <!-- <source class="lazy" data-src="images/chat/bot-owl-mic.webp" type="image/webp" media="(max-width: 669.98px)">
+                        <source class="lazy" data-src="images/chat/bot-owl-mic.png" type="image/png" media="(max-width: 669.98px)"> -->
                         <img src="images/chat/bot-owl-donor-h750.png" alt="" class="img-fluid">
                     </picture>            
                  </div> 
             </div>
             <div class="container">
                 <div class="row justify-content-end content-column parent">
-                    <div class="col-lg-9 col-md-8 chat-column">
+                    <div class="col-sm-3 owl-mobile"> 
+                        <div class="img-fluid">
+                            <img src="images/chat/bot-owl-mic.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8 col-sm-9 chat-column">
                         <div class="message-block bot">
                             <div class="message bot-message">
                                 <p class="message-text"> Привет! Я помогу тебе зарегистрировать товарный знак. Удели 10 минут своего времени
@@ -218,39 +225,54 @@
 
         </section>
 
-        <footer class="chatPage-footer" id="footer-5">
-            <div class="footer pb-50">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="footer-item footer-item-4 pt-30">
-                                <h4>Патентное бюро</h4>
-                                <img class="img-fluid" src="images/logo.jpg" alt="">
-                            </div> 
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 pt-30">
-                            <div class="footer-item footer-item-4">
-                                <h4>Реквизиты</h4>
-                                <span>ООО "Патентное бюро "ЖЕЛЕЗНО"</span>
-                                <span>ИНН 4345497285</span>
-                                <span>ОГРН 1194350012867</span>
-                            </div> 
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 pt-30">
-                            <div class="footer-item footer-item-4">
-                                <h4>Товарный знак</h4>
-                                <ul>
-                                    <li><a href="https://tovarnyj-znak.ru/" target="_blank">Регистрация</a></li>
-                                    <li><a href="https://tovarnyj-znak.ru/prodlenie" target="_blank">Продление</a></li>
-                                    <li><a href="https://tovarnyj-znak.ru/dogovor-otchuzhdeniya-peredacha-prava" target="_blank">Отчуждение</a></li>
-                                    <li><a href="#">Патент на полезную модель</a></li>
-                                </ul>
-                            </div> 
-                        </div>
-                    </div> 
+
+        <footer id="footer-5" class="chatPage-footer">
+        <div class="footer pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="footer-item footer-item-4 pt-30">
+                            <h4>Патентное бюро</h4>
+                            <a href="https://tovarnyj-znak.ru/" target="_blank"><img class="img-fluid" src="images/logo.jpg" alt="Патентное бюро Железно"></a>
+                        </div> 
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6  col-12 pt-30">
+                        <div class="footer-item footer-item-4">
+                            <h4>Контакты</h4>
+                            <ul>
+                                <li><a class="phone" href="tel:+88000000000" target="_blank">8 800 222 33 45</a></li>
+                                <li><a class="email" href="mailto:info@tovarnyj-znak.ru" target="_blank">info@tovarnyj-znak.ru</a></li>
+                                <li class="wa">
+                                    <a href="https://wa.me/+88000000000?text=Мне%20нужна%20консультация" target="_blank">
+                                        <img src="images/wa-logo.png" alt="" style="width: 25px; height: 25px;">Написать в Whatsapp
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> 
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6  col-12 pt-30">
+                        <div class="footer-item footer-item-4">
+                            <h4>Товарный знак</h4>
+                            <ul>
+                                <li><a href="https://tovarnyj-znak.ru/">Регистрация</a></li>
+                                <li><a href="https://tovarnyj-znak.ru/prodlenie">Продление</a></li>
+                                <li><a href="https://tovarnyj-znak.ru/dogovor-otchuzhdeniya-peredacha-prava">Отчуждение</a></li>
+                            </ul>
+                        </div> 
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 pt-30">
+                        <div class="footer-item footer-item-4">
+                            <h4>Реквизиты</h4>
+                            <span>ООО "Патентное бюро<br> "ЖЕЛЕЗНО"</span><br>
+                            <span>ИНН 4345497285</span><br>
+                            <span>ОГРН 1194350012867</span>
+                        </div> 
+                    </div>
                 </div> 
-            </div>
-        </footer>
+            </div> 
+        </div>
+    </footer>
+            
 
     </div> <!--end of chatPage-wrapper-->
 

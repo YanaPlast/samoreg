@@ -1548,6 +1548,9 @@ p {
 .chat-column {
     height: auto;
 }
+.owl-mobile {
+    display: none;
+}
 #owl-container {
     position: fixed;
     z-index: 0;
@@ -1555,25 +1558,21 @@ p {
     /* height: 10px; */
     /* height: calc(100vh - 300px); */
     height: 70vh;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
  .img-wrapper {
     /* position: absolute;  */
     /* bottom: 30px;   */
     height: 100%;
-    background-color: blue;
+    /* background-color: blue; */
     padding-bottom: 20px;
     padding-top: 60px;
 } 
 .img-wrapper img {
     height: 100%;
-    max-height: 550px;
     width: auto;
-    /* max-height: 550px; */
 }
-/* .parent {
-    min-height: 450px;
-}  */
+
  /*======= Липкая Сова Конец ==========*/
 
 /*======= Модальное окно ==========*/
@@ -1672,9 +1671,6 @@ p {
     #page-menu ul {
         padding: 15px 0;
     }
-    /* .client-input[type="text"] {
-        padding: 0 5px 0 0;
-    } */
 
 }
 @media (max-width: 991.98px) {
@@ -1709,16 +1705,11 @@ p {
         padding-top: 20px;
     }
     #chat-screen {
-        padding-top: 100px;
-        min-height: none;
-    }
-    .parent {
-        min-height: auto;
+        padding-top: 125px;
     }
     .img-container {
         margin-right: 10px;
         margin-left: auto;
-        width: 130px;
     }
     .header-logo  {
         display: none;
@@ -1744,42 +1735,29 @@ p {
     }
 
 }
-@media (max-width: 650px) {
-    .chat-column {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
+@media (max-width: 669.98px) {
     .img-container {
-        right: 10px;
-        max-width: 130px;
-    }
-}
-@media (min-width: 576px) {
-/*     .mobile-view {
         display: none;
-    } */
+    }
+    .owl-mobile {
+        display: block;
+    }
+    .owl-mobile img {
+        width: 100%;
+        height: auto;
+    }
 }
 @media (max-width: 575.98px) {
-    /* .desktop-view {
-        display: none;
-    } */
     .chat-column {
         padding-left: 20px;
         padding-right: 20px;
     }
-
-/*     .mobile-view .mobile-message {
-        padding-left: 0;
+    .owl-mobile {
+        display: none;
     }
-
-    .mobile-view .bot-message {
-        margin-left: 0;
-    } */
-
     .mobile-message .bot-message:before {
         display: none;
     }
-
     .bot-message {
         padding: 10px 10px 20px 20px;
         margin-left: 15px;
