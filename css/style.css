@@ -1557,9 +1557,9 @@ p {
     bottom: 0;
     /* height: 10px; */
     /* height: calc(100vh - 300px); */
-    height: 70vh;
+    height: 50vh;
     /* background-color: yellow; */
-    max-height: 750px;
+    
 }
  .img-wrapper {
     /* position: absolute;  */
@@ -1572,6 +1572,7 @@ p {
 .img-wrapper img {
     height: 100%;
     width: auto;
+    /* max-height: 750px; */
 }
 
  /*======= Липкая Сова Конец ==========*/
