@@ -32,39 +32,41 @@
 <body>
     
     <!-- <header id="header-area-chat" class="header-area header-area-5"> -->
+    
+    <div class="chatPage-wrapper">
 
-
-       <header id="header-area-main" class="header-area header-area-5 main-page">
-        <div class="container">
-            <div class="row top">
-                <div class="col-lg-6 col-md-7">
-                    <div class="header-logo">
-                        <a href="https://tovarnyj-znak.ru/" target="_blank">
+        <header id="header-area-main" class="header-area header-area-5 main-page chatPage-header">
+            <div class="container">
+                <div class="row top">
+                    <div class="col-lg-6 col-md-7">
+                        <div class="header-logo">
+                            <a href="https://tovarnyj-znak.ru/" target="_blank">
                             <img src="images/logo.jpg" alt="Патентное бюро Железно" class="img-fluid">
-                        </a>
-                    </div> 
+                            </a>
+                        </div> 
                     <div class="header-name">ZnakOnline - спец проект патентного бюро Железно</div>
-                </div>
+                    </div>
 
-                <div class="col-lg-6 col-md-5">
-                    <div class="main-menu text-right">
-                        <nav id="page-menu">                            
-                            <ul>
-                                <li><a class="phone" href="tel:+88000000000">8 800 222 33 45</a></li>
-                                <li class="social-logo">
+                    <div class="col-lg-6 col-md-5">
+                        <div class="main-menu text-right">
+                            <nav id="page-menu">                            
+                                <ul>
+                                    <li><a class="phone" href="tel:+88000000000">8 800 222 33 45</a></li>
+                                    <li class="social-logo">
                                     <a href="https://wa.me/+88000000000?text=Мне%20нужна%20консультация" target="_blank"><img src="images/wa-logo.png" alt="" style="width: 30px; height: 30px;"></a>
-                                </li>
-                                <li><a class="butn butn-5" href="#">Нужна помощь</a></li>
-                            </ul>
-                        </nav>
-                    </div> 
-                </div>
+                                    </li>
+                                    <li><a class="butn butn-5" href="#">Нужна помощь</a></li>
+                                </ul>
+                            </nav>
+                        </div> 
+                    </div>
+                </div> 
             </div> 
-        </div> 
-    </header>
+        </header>
 
 
         <section id="chat-screen" class="pt-150">
+            
             <div class="img-container img-fluid">
                 <div class="img-wrapper">
                     <picture>
@@ -79,7 +81,7 @@
             <div class="container">
                 <div class="row justify-content-end content-column parent">
                     <div class="col-lg-9 col-md-8 chat-column">
-                        <div class="row mobile-view">
+                        <!-- <div class="row mobile-view">
                             <div class="col-3 mobile-bot">
                                 <picture>
                                     <source class="lazy" data-src="images/chat/bot-owl-mic.webp" type="image/webp">
@@ -99,8 +101,8 @@
                                     </div>
                                 </div> 
                             </div>
-                        </div>
-                        <div class="message-block bot desktop-view">
+                        </div> -->
+                        <div class="message-block bot">
                             <div class="message bot-message">
                                 <p class="message-text"> Привет! Я помогу тебе зарегистрировать товарный знак. Удели 10 минут своего времени
                                     и на выходе ты получишь полный пакет документов на регистрацию товарного знака.</p>
@@ -237,7 +239,7 @@
 
         </section>
 
-        <footer id="footer-5">
+        <footer class="chatPage-footer" id="footer-5">
             <div class="footer pb-50">
                 <div class="container">
                     <div class="row">
@@ -270,6 +272,8 @@
                 </div> 
             </div>
         </footer>
+
+    </div> <!--end of chatPage-wrapper-->
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>

@@ -38,9 +38,26 @@
         url('../fonts/roboto-v27-latin_cyrillic-700.svg#Roboto') format('svg');
 }
 
-
+html,
+body {
+    height: 100%;
+}
 body {
     font-family: 'Roboto', sans-serif;
+}
+.chatPage-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.chatPage-header {
+    flex: 0 0 auto;
+}
+#chat-screen {
+    flex: 1 0 auto;
+}
+.chatPage-footer {
+    flex: 0 0 auto;
 }
 .img {
     max-width: 100%;
@@ -273,6 +290,9 @@ p {
 .sticky#header-area {
     padding-bottom: 0;
 }
+.sticky .header-name {
+    padding-top: 10px;
+}
 @-webkit-keyframes navigation {
     0% {
         opacity: 0;
@@ -296,6 +316,7 @@ p {
 .header-name  {
     display: inline-block;
 }
+
 .header-name {
    color: #fff;
    font-size: 16px;
@@ -357,9 +378,7 @@ p {
     top: 100%;
     opacity: 1;
     visibility: visible;
-
 }
-
 .main-menu ul li .sub-menu li {
     text-align: left;
     margin-left: 0;
@@ -368,7 +387,6 @@ p {
     transition: all 0.4s linear;
     margin-left: 0 !important;
 }
-
 .main-menu ul li .sub-menu li:hover {
     background: #19b4f2;
 }
@@ -1297,39 +1315,8 @@ p {
     background: linear-gradient(90deg, rgba(0, 106, 234, 1) 30%, rgba(100, 43, 162, 1) 100%) !important;
 }
 
-/*back to top*/
+/*end of back to top*/
 
-
-/* ========================================= mobile_menu_area ======================================================*/
-
-.mobile_menu_area,
-.mobile_logo_area {
-    display: none;
-}
-.mobile_logo_area{
-    padding: 30px 0 30px;
-    background: -webkit-gradient(linear, left top, right top, color-stop(30%, rgba(0, 106, 234, 1)), to(rgba(100, 43, 162, 1)));
-    background: linear-gradient(90deg, rgba(0, 106, 234, 1) 30%, rgba(100, 43, 162, 1) 100%);       
-}
-.ohome_3.mobile_logo_area{
-background: -webkit-gradient(linear, left top, right top, color-stop(30%, rgba(241, 85, 22, 1)), to(rgba(255, 112, 147, 1)));
-background: linear-gradient(90deg, rgba(241, 85, 22, 1) 30%, rgba(255, 112, 147, 1) 100%);
-}
-.mobile_logo_area{
-background:#f4717a;
-}
-.mobile_logo_area{
-background: -webkit-gradient(linear, left top, right top, from(rgba(1, 219, 176, 1)), to(rgba(25, 180, 242, 1)));
-background: linear-gradient(90deg, rgba(1, 219, 176, 1) 0%, rgba(25, 180, 242, 1) 100%);
-}
-.mobile_logo_area{
-background: -webkit-gradient(linear, left top, right top, from(rgba(212, 134, 10, 1)), to(rgba(169, 11, 71, 1)));
-background: linear-gradient(90deg, rgba(212, 134, 10, 1) 0%, rgba(169, 11, 71, 1) 100%);
-}
-.mobile_logo_area{
-background: -webkit-gradient(linear, left top, right top, from(rgba(148, 69, 255, 1)), to(rgba(240, 69, 255, 1)));
-background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 1) 100%);
-}
 
 
 /* =========================================== chat-page ===============================================*/
@@ -1573,16 +1560,18 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
 }
 .img-wrapper {
     position: absolute;
-    bottom: 20px; 
+    bottom: 30px; 
     height: calc(100vh - 200px);
     width: auto;
+    padding-top: 100px;
 }
 .img-wrapper img {
     height: 100%;
     width: auto;
+    max-height: 550px;
 }
 .parent {
-    min-height: 850px;
+    min-height: 450px;
 } 
  /*======= Липкая Сова Конец ==========*/
   /*======= Модальное окно ==========*/
@@ -1775,26 +1764,26 @@ background: linear-gradient(90deg, rgba(148, 69, 255, 1) 0%, rgba(240, 69, 255, 
     }
 }
 @media (min-width: 576px) {
-    .mobile-view {
+/*     .mobile-view {
         display: none;
-    }
+    } */
 }
 @media (max-width: 575.98px) {
-    .desktop-view {
+    /* .desktop-view {
         display: none;
-    }
+    } */
     .chat-column {
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    .mobile-view .mobile-message {
+/*     .mobile-view .mobile-message {
         padding-left: 0;
     }
 
     .mobile-view .bot-message {
         margin-left: 0;
-    }
+    } */
 
     .mobile-message .bot-message:before {
         display: none;

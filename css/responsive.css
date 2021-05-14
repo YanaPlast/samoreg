@@ -247,6 +247,9 @@
     .sticky .main-menu ul li {
         margin-left: 0;
     }
+    .sticky .header-name {
+        padding-top: 0;
+    }
 }
 /* =========================Large Mobile :480px. ===========================================*/
 
