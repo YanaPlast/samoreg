@@ -262,8 +262,22 @@ p {
     padding: 25px 0;
 
 }
+.orange-btn {
+    background: linear-gradient(89.82deg, #DF4C2F 1.34%, #FF8269 99.84%, rgba(223, 76, 47, 0) 99.85%);
+    background-color: #DF4C2F;
+    border: none;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    /* color: #2a1d63; */
+}
 #header-area .butn-5:hover {
     color: #004ad1;
+}
+.orange-btn:hover {
+    background: none;
+    background-color: #ffffff;
+    text-shadow: none;
+    transition: all 0.3 linear;
+
 }
 #page-menu ul {
     display: flex;
@@ -682,7 +696,6 @@ p {
 
 .digital-overlay .digital-content a {
     color: #fff;
-    border: 1px solid #fff;
     border-radius: 30px;
     line-height: 40px;
     padding: 0 52px;
@@ -766,6 +779,7 @@ p {
 /*===========================
     5.about css 
 ===========================*/
+
 .about-play {
     position: relative;
 }
@@ -777,9 +791,9 @@ p {
     top: 0;
     height: 100%;
     width: 100%;
-    background: rgba(1, 219, 176, 0.8);
+    /* background: rgba(1, 219, 176, 0.8);
     background: -webkit-gradient(linear, left top, right top, from(rgba(1, 219, 176, .8)), to(rgba(25, 180, 242, .8)));
-    background: linear-gradient(90deg, rgba(1, 219, 176, .8) 0%, rgba(25, 180, 242, .8) 100%);
+    background: linear-gradient(90deg, rgba(1, 219, 176, .8) 0%, rgba(25, 180, 242, .8) 100%); */
 }
 
 .about-play .play-overlay i {
@@ -839,22 +853,30 @@ p {
 }
 /*====== home page 2 ======*/
 
-.play-overlay.play-overlay-2 {
+/* .play-overlay.play-overlay-2 {
     background: -webkit-gradient(linear, left top, right top, from(rgba(119, 1, 219, 0.8)), to(rgba(25, 153, 242, 0.8)));
     background: linear-gradient(90deg, rgba(119, 1, 219, 0.8) 0%, rgba(25, 153, 242, 0.8) 100%);
-}
+} */
 
 .play-overlay.play-overlay-2 i {
     color: #700ae1;
 }
 
 .about-content.about-content-2 a:not(.link) {
-    border-color: #700ae1;
+    border: none; 
+    background: linear-gradient(90deg, rgba(119, 1, 219, 1) 0%, rgba(25, 153, 242, 1) 100%);
+    background-color: #700ae1;
+    color: #ffffff;
+    outline: none;
 }
 
 .about-content.about-content-2 a:not(.link):hover {
-    background: #700ae1;
-    color: #fff;
+    background: #ffffff;
+    color: #700ae1;
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(112, 10, 225, 1) inset;
+    -moz-box-shadow: 0px 0px 0px 1px rgba(112, 10, 225, 1) inset;
+    box-shadow: 0px 0px 0px 1px rgba(112, 10, 225, 1) inset;
+
 }
 
 .title-overlay {
@@ -1441,39 +1463,61 @@ p {
 }
 .bot-btn {
     padding: 10px 30px;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 106, 234, 1)), to(rgba(100, 43, 162, 1)));
-    background: linear-gradient(90deg, rgba(0, 106, 234, 1) 0%, rgba(100, 43, 162, 1) 100%);
-    /* background-color: #113382;  */
-    background-color: #5d30a7;
+    /* background: -webkit-gradient(linear, left top, right top, from(rgba(0, 106, 234, 1)), to(rgba(100, 43, 162, 1)));
+    background: linear-gradient(90deg, rgba(0, 106, 234, 1) 0%, rgba(100, 43, 162, 1) 100%); */
+    background-color: #113382;  
+    /* background-color: #5d30a7; */
     -webkit-transition: all .3s;
-    transition: all .3s linear;
+    transition: background .3s linear;
+    transition: ciolor .3s linear;
     cursor: pointer;
     outline: none !important;
-    border-radius: 20px;
+    border-radius: 15px;
     color: #ffffff;
     font-size: 16px;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
     text-transform: capitalize;
-    margin: 0 10px 20px 0;
+    margin: 0 10px 15px 0;
+    border: none;
 }
+.btn-inform,
+.btn-edit,
+.btn-help {
+    padding-left: 15px;
+    background-color: #2955b9;
+    padding-right: 40px;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+.btn-inform {
+    background-image: url(../images/info.png);
+}
+.btn-edit {
+    background-image: url(../images/edit.png);
+}
+.btn-help{
+    background-image: url(../images/help.png);
+}
+
+
 .bot-btn:hover,
 .bot-btn:active {
-    background: none; 
     background-color: #5d30a7;
     color: #ffffff;
-   -webkit-box-shadow: 0px 0px 0px 1px #5d30a7 inset;
+   /* -webkit-box-shadow: 0px 0px 0px 1px #5d30a7 inset;
     -moz-box-shadow: 0px 0px 0px 1px #5d30a7 inset;
-    box-shadow: 0px 0px 0px 1px #5d30a7 inset;
+    box-shadow: 0px 0px 0px 1px #5d30a7 inset; */
     transition: all .3s linear;
+    outline: none;
     
 }
 .bot-btn:focus {
-    background-color: #0e2864;
-    background-image: none;
+    background-color: #544c66;
     transition: all .3s linear;
     color: #ffffff;
     transition: all linear;
+
 }
 .single-use:focus,
 .single-use:active,
@@ -1483,15 +1527,6 @@ p {
     transition: all .3s linear;
     color: #b8b8b8;
     transition: all linear;
-}
-.used:hover {
-    background: none;
-    background-color: #e2e2e2;
-    color: #5d30a7;
-    -webkit-box-shadow: 0px 0px 0px 1px #e2e2e2 inset;
-    -moz-box-shadow: 0px 0px 0px 1px #e2e2e2 inset;
-    box-shadow: 0px 0px 0px 1px #e2e2e2 inset;
-    transition: all .3s linear;
 }
 .pushed {
     background-image: none;
@@ -1683,8 +1718,15 @@ p {
 
 }
 @media (max-width: 991.98px) {
-    .about-play {
-        margin-bottom: 20px;
+    .about .row {
+        align-items: flex-end;
+    }
+    .about ul {
+        padding-bottom: 20px;
+    }
+    .about-content a:not(.link) {
+        margin-top: 30px;
+        margin-bottom: 45px;
     }
     #team .col-lg-3 {
         margin-bottom: 15px;
@@ -1700,12 +1742,24 @@ p {
     }
 
     #faq,
-    #team,
-    .about {
+    #team {
         padding-top: 60px;
         padding-bottom: 60px;
     }
-
+    .about {
+        padding-top: 45px;
+    }
+    .about .play {
+        position: relative;
+    }
+    .about-play img {
+        position: absolute;
+        bottom: -2px;
+        left: -80px;
+        height: auto;
+        width: 150%;
+        max-width: none;
+    }
     #testomonial {
         padding-top: 60px;
         padding-bottom: 120px;
@@ -1741,6 +1795,13 @@ p {
         left: 0;
         width: 100%;
         text-align: center;
+    }
+    .about-content a:not(.link) {
+        margin-top: 30px;
+        margin-bottom: 45px;
+        line-height: 1.3;
+        text-align: center;
+        padding: 15px 20px;
     }
 
 }
@@ -1859,6 +1920,9 @@ p {
     }
     .main-menu ul li {
         margin: 0;
+    }
+    .about .about-play {
+        display: none;
     }
     .footer {
         padding-bottom: 40px !important;
